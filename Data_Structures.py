@@ -156,8 +156,22 @@ print(x)
 filtered = list(filter(lambda item:item[1] >= 10 , item))  # same as above with condition since it is filter
 print(filtered)
 
+# ZIP function: used to pack all iterables or data structures into one
+#--------------
 
+list1 = [1,2,3,4,5]
+list2 = [78,98,90,45]
 
+print(list(zip("abc",list1,list2))) 
 
+#--------------------------------------------QUEUE------------------------------------------------------------------------
 
+from collections import deque
 
+queue = deque([])
+queue.append(1)
+queue.append(2)
+queue.append(3)
+queue.popleft()  # --> this will remove the element from the left
+
+print(queue)

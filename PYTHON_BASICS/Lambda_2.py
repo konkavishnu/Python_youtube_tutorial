@@ -1,6 +1,9 @@
 from functools import reduce
 
-numbers =[1,2,3,4,5,1]
+numbers =[1,2,3,4,5,1] 
+
+total_map = map(lambda acc: acc*2,numbers)
+print(list(total_map))
 
 total = reduce(lambda acc,curr : acc + curr,numbers)
 # reduce --> is same like java reduce
